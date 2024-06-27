@@ -69,7 +69,6 @@
             >
               <i class="fa-solid fa-bars"></i>
             </button>
-
             <div
               class="offcanvas offcanvas-end"
               tabindex="-1"
@@ -86,11 +85,9 @@
                 ></button>
               </div>
               <div class="offcanvas-body hidden-menu-items">
-                <a href="" class=""
-                  ><div class="my-3 pt-3">ჩვენს შესახებ</div></a
-                >
-                <a href="" class=""><div class="my-3 pt-3">კურსები</div></a>
-                <a href="" class=""><div class="my-3 pt-3">კონტაქტი</div></a>
+                <button data-bs-dismiss="offcanvas" id="hidden-btn-1" class="my-3 pt-3">ჩვენს შესახებ</button>
+                <button data-bs-dismiss="offcanvas" id="hidden-btn-2" class="my-3 pt-3">კურსები</button>
+                <button data-bs-dismiss="offcanvas" id="hidden-btn-3" class="my-3 pt-3">კონტაქტი</button>
               </div>
             </div>
           </div>
@@ -128,7 +125,7 @@
       </div>
     </section>
     <section id="section-2" class="container third-section">
-      <p>აირჩიე სასურველი კურსი</p>
+      <p id="test">აირჩიე სასურველი კურსი</p>
       <div class="container">
         <div class="row gy-5 ">
           <div class="col-6 col-xl-4 col-lg-4 ">
@@ -278,6 +275,22 @@
             scrollTop: $('#section-3').offset().top
         }, 500);
     });
+    $('#hidden-btn-1').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#section-1').offset().top
+        }, 500);
+    });
+    $('#hidden-btn-2').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#section-2').offset().top
+        }, 500);
+    });
+    $('#hidden-btn-3').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#section-3').offset().top
+        }, 500);
+    });
+   
 });
 
   </script>

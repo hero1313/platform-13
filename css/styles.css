@@ -31,7 +31,7 @@ a {
 .hidden-menu-items {
   overflow-x: hidden;
 }
-.hidden-menu-items > a > div {
+.hidden-menu-items > button {
   text-align: left;
   color: #22225b;
   font-weight: 800;
@@ -40,8 +40,10 @@ a {
   padding-left: 15px;
   padding-bottom: 16px;
   align-items: center;
+  border: none;
+  background-color: transparent;
 }
-.hidden-menu-items > a > div:hover {
+.hidden-menu-items > button:hover {
   background-color: #22225b;
   color: white; 
   transition: 0.3s;
