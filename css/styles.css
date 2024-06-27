@@ -17,7 +17,9 @@ a {
   border: none;
   background-color: transparent;
 }
-
+.categories-wrapper{
+  float: right;
+}
 .header-wrapper {
   align-items: center;
 }
@@ -97,11 +99,11 @@ a {
   transition: 0.3s;
 }
 .academy-of-change {
-  width: 90%;
+ margin-right: 10vw;
 }
 .academy-of-change > p {
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 60px;
   font-weight: 700;
   color: #22225b;
   text-align: right;
@@ -122,7 +124,7 @@ a {
 }
 .third-section {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 .third-section > p {
@@ -133,19 +135,24 @@ a {
 }
 .lecturer-card {
   background-color: #22225b;
-  width: 15rem;
-  max-height: 400px;  
   margin: auto;
 }
 .lecturer-card-title {
   color: #f9f6f2;
-  width: 80%;
-  min-height: 70px;
+  width: 90%;
+  min-height: 50px;
   text-align: left;
+}
+.course .col-6{
+  padding: 30px;
+  margin-top: 20px !important;
 }
 .card-details {
   margin-top: 20px;
   justify-content: space-between;
+}
+.card-title {
+  font-size: 17px;
 }
 .card-details > div > p {
   color: #f9f6f2;
@@ -210,7 +217,7 @@ a {
   width: 100%;
   text-align: center;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 40px;
   position: relative;
 }
@@ -287,6 +294,7 @@ a {
   padding: 10px 03px;
   border-radius: 15px;
   margin-top: -25px;
+  width: 20%;
 }
 .all-courses > a {
   color: #22225b;
@@ -314,19 +322,15 @@ a {
 }
 .facebook-icon-wrapper > a > i {
   margin-top: 16px;
-  margin-left: 9px;
 }
 .instagram-icon-wrapper > a > i {
   margin-top: 16px;
-  margin-left: 4px;
 }
 .linkdin-icon-wrapper > a > i {
   margin-top: 16px;
-  margin-left: 5px;
 }
 .tiktok-icon-wrapper > a > i {
   margin-top: 16px;
-  margin-left: 5px;
 }
 .phone-number > p,
 .email > p {
@@ -340,13 +344,17 @@ a {
   height: 39px;
   width: 39px;
   border-radius: 100%;
+  text-align: center;
   background-color: #e6e6e6;
+}
+.phone-number > div > i,
+.email > div{
+  text-align: center;
 }
 .phone-number > div > i,
 .email > div > i {
   color: #22225b;
-  margin-top: 18px;
-  margin-left: 3px;
+  margin-top: 20px;
 }
 @media (max-width: 1200px) {
   .academy-of-change > p {
@@ -379,7 +387,8 @@ a {
   }
   .academy-of-change > p {
     font-size: 30px;
-    margin-top: 79px;
+    margin-top: 59px;
+    font-size: 25px;
   }
 }
 @media (max-width: 545px){
@@ -387,14 +396,11 @@ a {
     background-image: url(../photos/Footer-small.png);
 
 }
-
+}
 @media (max-width: 545px) {
   .arrow-right {
     top: 87%;
     right: 25px;
-  }
-  .lecturer-card {
-    width: 12rem;
   }
   .lecturer-card-title,
   .card-details,
@@ -411,7 +417,25 @@ a {
     font-size: 12px;
   }
   .academy-of-change > p {
-    font-size: 30px;
-    margin-top: 79px;
+    font-size: 22px;
+    margin-top: 99px;
   }
+}
+.social-icons i{
+  font-size: 17px;
+}
+.social-icons  div{
+  text-align: center;
+}
+.social-icons  a{
+  text-align: center
+}
+.email i{
+  font-size: 23px;
+}
+.phone-number i{
+  font-size: 23px;
+}
+.offcanvas {
+  width: 40% !important;
 }
