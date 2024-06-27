@@ -260,36 +260,21 @@
 
   <script>
     $(document).ready(function() {
-    $('#btn-1').click(function() {
+
+      function navButton (btn, targetBtn){
+        $(btn).click(function() {
         $('html, body').animate({
-            scrollTop: $('#section-1').offset().top
-        }, 1000);
-    });
-    $('#btn-2').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#section-2').offset().top
+            scrollTop: $(targetBtn).offset().top
         }, 500);
     });
-    $('#btn-3').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#section-3').offset().top
-        }, 500);
-    });
-    $('#hidden-btn-1').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#section-1').offset().top
-        }, 500);
-    });
-    $('#hidden-btn-2').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#section-2').offset().top
-        }, 500);
-    });
-    $('#hidden-btn-3').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#section-3').offset().top
-        }, 500);
-    });
+      }
+
+      navButton('#btn-1', '#section-1')
+      navButton('#btn-2', '#section-2')
+      navButton('#btn-3', '#section-3')
+      navButton('#hidden-btn-1', '#section-1')
+      navButton('#hidden-btn-2', '#section-2')
+      navButton('#hidden-btn-3', '#section-3')
    
 });
 
