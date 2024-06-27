@@ -312,6 +312,7 @@
   </footer>
 </body>
 
+<<<<<<< HEAD
 <script>
   $(document).ready(function () {
     $('#btn-1').click(function () {
@@ -344,6 +345,27 @@
         scrollTop: $('#section-3').offset().top
       }, 500);
     });
+=======
+  <script>
+    $(document).ready(function() {
+
+      function navButton (btn, targetBtn){
+        $(btn).click(function() {
+        $('html, body').animate({
+            scrollTop: $(targetBtn).offset().top
+        }, 500);
+    });
+      }
+
+      navButton('#btn-1', '#section-1')
+      navButton('#btn-2', '#section-2')
+      navButton('#btn-3', '#section-3')
+      navButton('#hidden-btn-1', '#section-1')
+      navButton('#hidden-btn-2', '#section-2')
+      navButton('#hidden-btn-3', '#section-3')
+   
+});
+>>>>>>> 85de5f04fcbe604f794bde5ca8c024df91d68f06
 
   });
 
